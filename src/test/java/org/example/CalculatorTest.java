@@ -31,6 +31,9 @@ class CalculatorTest {
 
     @Test
     void testQuotient() {
+        int expected = 0;
+        int actual = -1;
+        assertEquals(expected, actual);
     }
 
     @Test
