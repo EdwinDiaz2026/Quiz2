@@ -24,9 +24,9 @@ class CalculatorTest {
 
     @Test
     void testProduct() {
-        int expected = 0;
-        int actual = -1;
-        assertEquals(expected, actual);
+        assertEquals(6, calculator.multiply(2,3));
+        assertEquals(0, calculator.multiply(17, 0));
+        assertEquals(24, calculator.multiply(-4, -6));
     }
 
     @Test
