@@ -31,9 +31,15 @@ class CalculatorTest {
 
     @Test
     void testQuotient() {
-        int expected = 0;
-        int actual = -1;
-        assertEquals(expected, actual);
+
+        assertEquals(3, calculator.divide(6,2));
+        assertEquals(6, calculator.divide(18, 3));
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> calculator.divide(1, 0));
+        String expectedMessage = "Ints can NOT be divided by zero";
+        String actualMessage = exception.getMessage();
+        assertEquals(expectedMessage,actualMessage);
+
     }
 
     @Test
