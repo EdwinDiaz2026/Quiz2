@@ -17,9 +17,9 @@ class CalculatorTest {
 
     @Test
     void testDifference() {
-        int expected = 0;
-        int actual = -1;
-        assertEquals(expected, actual);
+        //I chose these two cases since they should result in opposite signs
+        assertEquals(1, calculator.subtract(3, 2));
+        assertEquals(-1, calculator.subtract(2, 3));
     }
 
     @Test
