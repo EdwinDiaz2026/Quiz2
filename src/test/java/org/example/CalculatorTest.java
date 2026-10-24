@@ -44,7 +44,7 @@ class CalculatorTest {
 
     @Test
     void isEven() {
-        assertFalse(true);
-        assertTrue(false);
+        assertTrue(calculator.isEven(4)); //expected to be true
+        assertFalse(calculator.isEven(3)); //expected to be false
     }
 }
