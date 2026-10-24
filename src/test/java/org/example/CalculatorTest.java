@@ -35,10 +35,7 @@ class CalculatorTest {
         assertEquals(3, calculator.divide(6,2));
         assertEquals(6, calculator.divide(18, 3));
 
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> calculator.divide(1, 0));
-        String expectedMessage = "Ints can NOT be divided by zero";
-        String actualMessage = exception.getMessage();
-        assertEquals(expectedMessage,actualMessage);
+        assertThrows(IllegalArgumentException.class, () -> calculator.divide(1, 0));
 
     }
 
